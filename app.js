@@ -16,6 +16,7 @@
 
   const icons = {
     discover: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
+    all: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>`,
     macos: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
     web: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
     "developer-tools": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
@@ -85,6 +86,12 @@
     return `<span class="star-count"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>${formatNumber(stars)}</span>`;
   }
 
+  function getCategories() {
+    const rawCategories = Array.isArray(data.categories) ? data.categories : [];
+    const categories = rawCategories.filter((cat) => cat && cat.id !== "all");
+    return [{ id: "all", name: "All Apps" }, ...categories];
+  }
+
   function appRow(app) {
     return `
       <div class="app-row" data-app="${app.id}">
@@ -141,12 +148,11 @@
     html += `<div class="nav-separator"></div>`;
     html += `<div class="nav-section-label">Categories</div>`;
 
-    const categories = [
-      { id: "web", name: "Web Apps", icon: icons.web },
-      { id: "developer-tools", name: "Developer Tools", icon: icons["developer-tools"] },
-      { id: "cli", name: "CLI Apps", icon: icons.cli },
-      { id: "productivity", name: "Productivity", icon: icons.productivity },
-    ];
+    const categories = getCategories().map((cat) => ({
+      id: cat.id,
+      name: cat.name,
+      icon: icons[cat.id] || icons.discover,
+    }));
 
     categories.forEach((cat) => {
       html += `<div class="nav-item${currentView === cat.id ? " active" : ""}" data-view="${cat.id}">
@@ -258,8 +264,10 @@
 
   // Category Page
   function renderCategory(categoryId) {
-    const cat = data.categories.find((c) => c.id === categoryId);
-    const apps = data.apps.filter((a) => a.category.includes(categoryId));
+    const cat = getCategories().find((c) => c.id === categoryId);
+    const apps = categoryId === "all"
+      ? data.apps
+      : data.apps.filter((a) => a.category.includes(categoryId));
 
     if (apps.length === 0) {
       return `
