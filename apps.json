@@ -1,7 +1,7 @@
 {
 	"$schema": "https://wvw.dev/apps.schema.json",
 	"store": {
-		"name": "Appétit",
+		"name": "sametcn99's Apps",
 		"developer": "sametcn99",
 		"tagline": "Bon appétit for apps.",
 		"url": "https://apps.sametcc.me",
