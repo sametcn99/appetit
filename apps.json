@@ -62,6 +62,7 @@
 			"language": "TypeScript",
 			"stars": 46,
 			"forks": 5,
+			"developer": "sametcn99",
 			"installCommand": "npm install vitepress-mermaid-renderer",
 			"requirements": "A VitePress project with Mermaid diagrams",
 			"features": [
@@ -189,7 +190,7 @@
 			"longDescription": "linkedin-hide-viewed-jobs is a userscript for LinkedIn Jobs focused on stability, multilingual detection, and safer scrolling. It can hide or highlight viewed listings, remembers preferences, supports LinkedIn SPA navigation, and includes guard logic to reduce the chance of rate-limit or bot-detection issues while browsing.",
 			"icon": null,
 			"iconEmoji": "💼",
-			"category": ["productivity", "developer-tools"],
+			"category": ["productivity"],
 			"platform": "Browser",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/linkedin-hide-viewed-jobs",
