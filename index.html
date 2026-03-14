@@ -1,63 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appétit</title>
-  <meta name="description" content="Appétit — An App Store-inspired catalog of free, tiny apps built with agentic engineering and vibecoding.">
-  <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="https://apps.fka.dev">
-  <link rel="icon" type="image/svg+xml" href="logo.svg">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="app-store">
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <div class="search-box">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input type="text" placeholder="Search" id="searchInput">
-        </div>
-      </div>
-      <nav class="sidebar-nav" id="sidebarNav"></nav>
-      <div class="sidebar-footer">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="theme-icon sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="theme-icon moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <span class="theme-label">Light Mode</span>
-        </button>
-        <a href="https://sametcc.me" target="_blank" rel="noopener" class="developer-info">
-          <img src="https://avatars.githubusercontent.com/u/57061347?v=4" alt="sametcn99" class="developer-avatar">
-          <span class="developer-name">sametcn99</span>
-        </a>
-      </div>
-    </aside>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>sametcn99's Apps</title>
+		<meta
+			name="description"
+			content="sametcn99's Apps — An App Store-inspired catalog of free, tiny apps built with agentic engineering and vibecoding."
+		/>
+		<meta
+			name="keywords"
+			content="sametcn99, apps, app store, indie apps, developer tools, web apps, productivity apps, CLI apps, open source"
+		/>
+		<meta name="author" content="sametcn99" />
+		<meta name="creator" content="sametcn99" />
+		<meta name="publisher" content="sametcn99" />
+		<meta name="application-name" content="sametcn99's Apps" />
+		<meta name="apple-mobile-web-app-title" content="Apps" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="referrer" content="strict-origin-when-cross-origin" />
+		<meta name="color-scheme" content="dark light" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		<link rel="canonical" href="https://apps.sametcc.me/" />
 
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="sametcn99's Apps" />
+		<meta property="og:title" content="sametcn99's Apps" />
+		<meta
+			property="og:description"
+			content="An App Store-inspired catalog of free, tiny apps built with agentic engineering and vibecoding."
+		/>
+		<meta property="og:url" content="https://apps.sametcc.me/" />
+		<meta property="og:image" content="https://apps.sametcc.me/logo.svg" />
+		<meta property="og:image:secure_url" content="https://apps.sametcc.me/logo.svg" />
+		<meta property="og:image:type" content="image/svg+xml" />
+		<meta property="og:image:alt" content="sametcn99's Apps logo" />
 
-    <main class="content" id="content">
-      <div class="mobile-topbar" id="mobileTopbar">
-        <button class="mobile-topbar-btn" id="mobileMenuBtn" aria-label="Menu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
-        <button class="mobile-topbar-btn mobile-back-btn" id="mobileBackBtn" aria-label="Back" style="display:none">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <span class="mobile-topbar-title">Appétit</span>
-      </div>
-      <div class="content-scroll" id="contentScroll"></div>
-    </main>
-  </div>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="sametcn99's Apps" />
+		<meta
+			name="twitter:description"
+			content="An App Store-inspired catalog of free, tiny apps built with agentic engineering and vibecoding."
+		/>
+		<meta name="twitter:image" content="https://apps.sametcc.me/logo.svg" />
+		<meta name="twitter:image:alt" content="sametcn99's Apps logo" />
 
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal" id="modal"></div>
-  </div>
+		<link rel="icon" type="image/svg+xml" href="logo.svg" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="apple-touch-icon" href="logo.svg" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="app-store">
+			<aside class="sidebar" id="sidebar">
+				<div class="sidebar-header">
+					<div class="search-box">
+						<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="11" cy="11" r="8" />
+							<line x1="21" y1="21" x2="16.65" y2="16.65" />
+						</svg>
+						<input type="text" placeholder="Search" id="searchInput" />
+					</div>
+				</div>
+				<nav class="sidebar-nav" id="sidebarNav"></nav>
+				<div class="sidebar-footer">
+					<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+						<svg
+							class="theme-icon sun"
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<circle cx="12" cy="12" r="5" />
+							<line x1="12" y1="1" x2="12" y2="3" />
+							<line x1="12" y1="21" x2="12" y2="23" />
+							<line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+							<line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+							<line x1="1" y1="12" x2="3" y2="12" />
+							<line x1="21" y1="12" x2="23" y2="12" />
+							<line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+							<line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+						</svg>
+						<svg
+							class="theme-icon moon"
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+						</svg>
+						<span class="theme-label">Light Mode</span>
+					</button>
+					<a href="https://sametcc.me" target="_blank" rel="noopener" class="developer-info">
+						<img src="https://avatars.githubusercontent.com/u/57061347?v=4" alt="sametcn99" class="developer-avatar" />
+						<span class="developer-name">sametcn99</span>
+					</a>
+				</div>
+			</aside>
 
-  <div class="brew-toast" id="brewToast">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-    <span>Copied to clipboard!</span>
-  </div>
+			<div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-  <script src="app.js"></script>
-</body>
+			<main class="content" id="content">
+				<div class="mobile-topbar" id="mobileTopbar">
+					<button class="mobile-topbar-btn" id="mobileMenuBtn" aria-label="Menu">
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+						>
+							<line x1="3" y1="6" x2="21" y2="6" />
+							<line x1="3" y1="12" x2="21" y2="12" />
+							<line x1="3" y1="18" x2="21" y2="18" />
+						</svg>
+					</button>
+					<button class="mobile-topbar-btn mobile-back-btn" id="mobileBackBtn" aria-label="Back" hidden>
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+						>
+							<polyline points="15 18 9 12 15 6" />
+						</svg>
+					</button>
+					<span class="mobile-topbar-title">Appétit</span>
+				</div>
+				<div class="content-scroll" id="contentScroll"></div>
+			</main>
+		</div>
+
+		<div class="modal-overlay" id="modalOverlay">
+			<div class="modal" id="modal"></div>
+		</div>
+
+		<div class="brew-toast" id="brewToast">
+			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34c759" stroke-width="2">
+				<polyline points="20 6 9 17 4 12" />
+			</svg>
+			<span>Copied to clipboard!</span>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
 </html>

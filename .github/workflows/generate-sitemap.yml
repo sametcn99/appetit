@@ -1,16 +1,22 @@
-name: Update GitHub Stats
+name: Generate Sitemap
 
 on:
-  schedule:
-    - cron: "0 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - apps.json
+      - scripts/generate-sitemap.js
+      - .github/workflows/generate-sitemap.yml
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  sitemap:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -18,19 +24,14 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Update star and fork counts
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bun scripts/update-stats.js
-
-      - name: Regenerate sitemap.xml
+      - name: Generate sitemap.xml
         run: bun scripts/generate-sitemap.js
 
       - name: Commit and push if changed
         run: |
-          git diff --quiet apps.json sitemap.xml && exit 0
+          git diff --quiet sitemap.xml && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add apps.json sitemap.xml
-          git commit -m "chore: update GitHub stats and sitemap"
+          git add sitemap.xml
+          git commit -m "chore: regenerate sitemap"
           git push

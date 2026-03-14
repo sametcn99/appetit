@@ -743,11 +743,11 @@
     if (!menuBtn || !backBtn) return;
 
     if (currentApp) {
-      menuBtn.style.display = "none";
-      backBtn.style.display = "flex";
+      menuBtn.hidden = true;
+      backBtn.hidden = false;
     } else {
-      menuBtn.style.display = "flex";
-      backBtn.style.display = "none";
+      menuBtn.hidden = false;
+      backBtn.hidden = true;
     }
   }
 
