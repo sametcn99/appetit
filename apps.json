@@ -52,7 +52,7 @@
 			"subtitle": "Interactive Mermaid diagrams for VitePress docs.",
 			"description": "A VitePress plugin that turns Mermaid code blocks into interactive diagrams with export and theme support.",
 			"longDescription": "Transform static Mermaid diagrams into interactive visualizations inside VitePress. The plugin adds zooming, panning, fullscreen mode, code copy, theme-aware rendering, and export options for documentation sites that need more than a static SVG.",
-			"icon": null,
+			"icon": "https://vitepress-mermaid-renderer.vercel.app/vitepress-logo.png",
 			"iconEmoji": "🧜",
 			"category": ["developer-tools", "web"],
 			"platform": "VitePress",
@@ -79,7 +79,7 @@
 			"subtitle": "HTML widgets and PowerShell tools for the Windows desktop.",
 			"description": "A desktop widget manager that brings HTML widgets, automation, and live editing to Windows.",
 			"longDescription": "HTWind is a customizable Windows widget manager built around HTML-based widgets. It supports desktop widgets, PowerShell execution, live preview editing, tray workflows, visibility rules, and persistent widget state so desktop tooling stays practical instead of decorative.",
-			"icon": null,
+			"icon": "https://raw.githubusercontent.com/sametcn99/HTWind/refs/heads/main/assets/android-chrome-512x512.png",
 			"iconEmoji": "🪟",
 			"developer": "sametcn99",
 			"downloadUrl": "https://github.com/sametcn99/HTWind/releases/latest",
@@ -100,7 +100,8 @@
 			],
 			"screenshots": [
 				"https://raw.githubusercontent.com/sametcn99/HTWind/refs/heads/main/assets/app_screenshots/page_home.png",
-				"https://raw.githubusercontent.com/sametcn99/HTWind/refs/heads/main/assets/app_screenshots/page_settings.png"
+				"https://raw.githubusercontent.com/sametcn99/HTWind/refs/heads/main/assets/app_screenshots/page_settings.png",
+				"https://raw.githubusercontent.com/sametcn99/HTWind/refs/heads/main/assets/app_screenshots/page_about.png"
 			]
 		},
 		{
@@ -109,7 +110,7 @@
 			"subtitle": "Self-hosted appointment scheduling with PWA support.",
 			"description": "A single-admin booking platform with shareable links, notifications, and self-hosted data ownership.",
 			"longDescription": "Booking Calendar is a self-hosted PWA for managing appointments without handing scheduling data to a third party. It includes admin scheduling controls, public booking pages, cancellation flows, notifications, webhooks, and SQLite-backed persistence aimed at practical small-scale booking workflows.",
-			"icon": null,
+			"icon": "https://booking-calendar-docs.vercel.app/android-chrome-512x512.png",
 			"iconEmoji": "📅",
 			"category": ["web", "productivity"],
 			"platform": "Web",
@@ -135,7 +136,7 @@
 			"subtitle": "Explore GitHub profiles, repos, gists, and star history.",
 			"description": "A Blazor-based GitHub profile explorer with analytics, charts, and repository insights.",
 			"longDescription": "GPVBlazor is a responsive GitHub profile viewer built with Blazor Server. It combines user search, repository browsing, gist viewing, README previews, star history charts, and profile statistics into a single interface for exploring open-source activity in more depth than the default GitHub profile pages.",
-			"icon": null,
+			"icon": "https://gpv.sametcc.me/icons/icon512.png",
 			"iconEmoji": "📈",
 			"category": ["web", "developer-tools"],
 			"platform": "Web",
@@ -216,7 +217,7 @@
 			"subtitle": "Live Mermaid editor with instant preview and sharing.",
 			"description": "A modern Mermaid web app for editing, previewing, and sharing diagrams in real time.",
 			"longDescription": "Mermaid Viewer is a full web application for creating and sharing Mermaid diagrams with a polished editing workflow. It combines a Next.js frontend and NestJS backend so users can edit diagrams live, preview changes instantly, and share results through a purpose-built diagram interface rather than a raw code editor alone.",
-			"icon": null,
+			"icon": "https://mermaid.sametcc.me/favicon.png",
 			"iconEmoji": "📊",
 			"category": ["web", "developer-tools"],
 			"platform": "Web",
@@ -242,7 +243,7 @@
 			"subtitle": "Structured Reddit RSS feeds as filterable JSON.",
 			"description": "A Deno service that converts subreddit RSS feeds into JSON with filters, sorting, and random selection.",
 			"longDescription": "Reddit RSS API is a lightweight Deno-powered HTTP service that turns subreddit RSS feeds into structured JSON responses. It supports merging multiple subreddits, filtering media posts, sorting or shuffling results, limiting output size, and rewriting Reddit links for legacy old.reddit.com views.",
-			"icon": null,
+			"icon": "https://raw.githubusercontent.com/sametcn99/reddit-rss-api/refs/heads/main/src/assets/android-chrome-512x512.png",
 			"iconEmoji": "📰",
 			"category": ["web", "developer-tools"],
 			"platform": "Web API",
@@ -268,7 +269,7 @@
 			"subtitle": "Keep .env secrets hidden before they reach the editor.",
 			"description": "A VS Code extension that intercepts environment files and lets you view or manage them safely.",
 			"longDescription": "Env Protector is a VS Code extension built around a security-first workflow for `.env` files. Instead of masking secrets after a file opens, it intercepts access before rendering, offers a masked view, and lets you add, edit, or remove variables without exposing raw values during screen sharing or recordings.",
-			"icon": null,
+			"icon": "https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/icon.png",
 			"iconEmoji": "🔐",
 			"category": ["developer-tools", "productivity"],
 			"platform": "VS Code",
@@ -289,7 +290,9 @@
 			],
 			"screenshots": [
 				"https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/assets/banner.png",
-				"https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/assets/masked.png"
+				"https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/assets/masked.png",
+				"https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/assets/commands.png",
+				"https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/assets/dialog.png"
 			]
 		}
 	]
