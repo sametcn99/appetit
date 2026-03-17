@@ -25,6 +25,12 @@
 			"headline": "SELF-HOSTED",
 			"title": "Own your booking flow end to end.",
 			"subtitle": "Booking Calendar is a self-hosted PWA for appointments, notifications, shareable links, and conflict-safe scheduling."
+		},
+		{
+			"id": "my-stars-atlas",
+			"headline": "STATIC SITE",
+			"title": "Publish your GitHub stars as an atlas.",
+			"subtitle": "My Stars Atlas turns starred repositories into a searchable static catalog with categories, filters, and progressive loading."
 		}
 	],
 	"categories": [
