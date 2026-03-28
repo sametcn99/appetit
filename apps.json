@@ -370,6 +370,37 @@
 			"screenshots": [
 				"https://opengraph.githubassets.com/1/sametcn99/my-stars-atlas"
 			]
+		},
+		{
+			"id": "gh-block-spam-accounts",
+			"name": "GitHub Spam Account Blocker",
+			"subtitle": "Review and block suspicious GitHub accounts with an explainable workflow.",
+			"description": "A browser-only React app and reusable GitHub Action for detecting suspicious follower and following accounts before blocking them.",
+			"longDescription": "GitHub Spam Account Blocker helps you moderate your GitHub social graph without relying on blind automation. It analyzes followers and following accounts, explains why profiles look suspicious, lets you review detections in a queue-based UI, and also ships a reusable GitHub Action for scheduled dry runs or optional blocking workflows.",
+			"icon": null,
+			"iconEmoji": "🛡️",
+			"category": [
+				"web",
+				"developer-tools"
+			],
+			"platform": "Web",
+			"price": "Free",
+			"github": "https://github.com/sametcn99/gh-block-spam-accounts",
+			"homepage": "https://gh-block-spam-accounts.vercel.app",
+			"language": "TypeScript",
+			"stars": 1,
+			"forks": 0,
+			"developer": "sametcn99",
+			"requirements": "Modern browser and a GitHub Personal Access Token",
+			"features": [
+				"Analyze followers and following accounts with sensitivity profiles",
+				"Review suspicious profiles with explainable detection reasons before blocking",
+				"Block and unblock accounts through a controlled queue with progress logs",
+				"Reuse the bundled GitHub Action for scheduled dry runs or optional blocking"
+			],
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/gh-block-spam-accounts"
+			]
 		}
 	]
 }
