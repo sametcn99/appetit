@@ -103,7 +103,7 @@
 			"github": "https://github.com/sametcn99/HTWind",
 			"homepage": "https://htwind.vercel.app",
 			"language": "C#",
-			"stars": 6,
+			"stars": 7,
 			"forks": 0,
 			"requirements": "Windows desktop environment",
 			"features": [
