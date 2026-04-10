@@ -136,7 +136,7 @@
 			"github": "https://github.com/sametcn99/booking-calendar",
 			"homepage": "https://booking-calendar-docs.vercel.app",
 			"language": "TypeScript",
-			"stars": 6,
+			"stars": 7,
 			"forks": 1,
 			"requirements": "Modern browser or self-hosted deployment",
 			"features": [
@@ -262,7 +262,7 @@
 			"github": "https://github.com/sametcn99/mermaid-viewer",
 			"homepage": "https://mermaid.sametcc.me/home",
 			"language": "TypeScript",
-			"stars": 7,
+			"stars": 8,
 			"forks": 2,
 			"requirements": "Modern browser",
 			"developer": "sametcn99",
