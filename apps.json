@@ -136,7 +136,7 @@
 			"github": "https://github.com/sametcn99/booking-calendar",
 			"homepage": "https://booking-calendar-docs.vercel.app",
 			"language": "TypeScript",
-			"stars": 8,
+			"stars": 9,
 			"forks": 1,
 			"requirements": "Modern browser or self-hosted deployment",
 			"features": [
